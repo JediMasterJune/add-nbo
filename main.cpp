@@ -12,8 +12,8 @@ int main(int argc, char* argv[])
         exit(EXIT_FAILURE);
     }
 
-    FILE* pFile1 = fopen(argv[1],"r");
-    FILE* pFile2 = fopen(argv[2],"r");
+    FILE* pFile1 = fopen(argv[1],"rb");
+    FILE* pFile2 = fopen(argv[2],"rb");
 
     uint8_t numBuf1[4], numBuf2[4];
     uint32_t num1, num2;
