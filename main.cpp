@@ -27,8 +27,8 @@ int main(int argc, char* argv[])
     printf("num1 in little endian = %#.8x\n", *pNum1);
     printf("num2 in little endian = %#.8x\n", *pNum2);
 #endif
-    num1 = htonl(*pNum1);
-    num2 = htonl(*pNum2);
+    num1 = ntohl(*pNum1);
+    num2 = ntohl(*pNum2);
 
 #ifdef DEBUG
     printf("num1 in big endian = %#.8x\n", num1);
